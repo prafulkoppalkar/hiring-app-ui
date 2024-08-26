@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import "../styles/components.css"; // Assuming you have styles defined here
+import "../../styles/components.css"; // Assuming you have styles defined here
 import { useNavigate, useLocation } from "react-router-dom";
 import {
   getRandomDescription,
   getTotalYearsOfExperience,
-} from "../helpers/candidateHelpers";
+} from "../../helpers/candidateHelpers";
 import { useRecoilState } from "recoil";
 import {
   hiredCandidatesState,
   shortlistedCandidatesState,
-} from "../recoil/atoms";
-import defaultIcon from "../assets/profile_image.png";
+} from "../../recoil/atoms";
+import defaultIcon from "../../assets/profile_image.png";
 import {
   DETAILS,
   EXPLORE,
@@ -23,8 +23,8 @@ import {
   SHARE,
   SHORTLIST,
   TIC_MARK,
-} from "../constants/generalConstants";
-import Icon from "./Icon";
+} from "../../constants/generalConstants";
+import Icon from "../atoms/Icon";
 
 const CandidateCard = ({ candidate, index }) => {
   const navigate = useNavigate();
@@ -156,9 +156,7 @@ const CandidateCard = ({ candidate, index }) => {
 
       {/* Second Section */}
       <div className="candidate__description">
-        <p>
-          {candidate.summary || getRandomDescription(index)}
-        </p>
+        <p>{candidate.summary || getRandomDescription(index)}</p>
       </div>
 
       {/* Third Section */}

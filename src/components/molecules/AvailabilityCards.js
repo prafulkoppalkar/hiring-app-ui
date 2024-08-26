@@ -1,9 +1,12 @@
 // AvailabilityCards.jsx
 import React from "react";
-import "../styles/components.css";
-import { AVAILABILITY_TEXT, CHECKERCARDS } from "../constants/generalConstants";
+import "../../styles/components.css";
+import {
+  AVAILABILITY_TEXT,
+  CHECKERCARDS,
+} from "../../constants/generalConstants";
 import CheckerCard from "./CheckerCard";
-import { SALARY_FUNCTION_MAP } from "../helpers/candidateHelpers";
+import { SALARY_FUNCTION_MAP } from "../../helpers/candidateHelpers";
 
 const AvailabilityCards = ({ candidate }) => {
   return (

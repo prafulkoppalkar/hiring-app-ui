@@ -1,7 +1,7 @@
-import WorkExperience from "../components/WorkExperience";
-import Education from "../components/Education";
-import Projects from "../components/Projects";
-import InterviewStatus from "../components/InterviewStatus";
+import WorkExperience from "../components/organisms/WorkExperience";
+import Education from "../components/organisms/Education";
+import Projects from "../components/organisms/Projects";
+import InterviewStatus from "../components/organisms/InterviewStatus";
 
 export const renderTabContent = (activeTab, candidate) => {
   switch (activeTab) {

@@ -1,8 +1,8 @@
 import React from "react";
-import "../styles/components.css";
-import defaultIcon from "../assets/profile_icon.png";
-import SearchBar from "./SearchBar";
-import FilterButton from "./FilterButton";
+import "../../styles/components.css";
+import defaultIcon from "../../assets/profile_icon.png";
+import SearchBar from "../atoms/SearchBar";
+import FilterButton from "../atoms/FilterButton";
 
 const Header = () => {
   return (

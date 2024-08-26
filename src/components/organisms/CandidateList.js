@@ -1,7 +1,7 @@
 import React from "react";
-import CandidateCard from "./CandidateCard";
-import "../styles/components.css";
-import Spinner from "./Spinner";
+import CandidateCard from "../molecules/CandidateCard";
+import "../../styles/components.css";
+import Spinner from "../atoms/Spinner";
 
 const CandidateList = ({
   candidatesToRender,
@@ -16,13 +16,24 @@ const CandidateList = ({
       <div className="candidates__container">
         {candidatesToRender &&
           candidatesToRender.map((candidate, idx) => (
-            <CandidateCard key={candidate.userId} candidate={candidate} index={idx} />
+            <CandidateCard
+              key={candidate.userId}
+              candidate={candidate}
+              index={idx}
+            />
           ))}
       </div>
       {loading && <Spinner />}
       {!hasMore && <p>No more candidates to load.</p>}
       {!loading && hasMore && (
-        <p><button className="secondaryButton" onClick={() => loadMoreCandidates()}>Load more</button></p>
+        <p>
+          <button
+            className="secondaryButton"
+            onClick={() => loadMoreCandidates()}
+          >
+            Load more
+          </button>
+        </p>
       )}
     </div>
   );

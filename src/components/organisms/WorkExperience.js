@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/components.css";
-import icon from "../assets/office_icon.jpg";
-import PickerItem from "./PickerItem";
+import "../../styles/components.css";
+import icon from "../../assets/office_icon.jpg";
+import PickerItem from "../atoms/PickerItem";
 
 const WorkExperience = ({ workExperience }) => {
   return (

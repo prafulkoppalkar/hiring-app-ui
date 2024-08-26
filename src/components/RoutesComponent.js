@@ -1,9 +1,9 @@
-import React from 'react';
-import { Routes, Route, Navigate} from 'react-router-dom';
-import Shortlisted from './ShortListed';
-import Hired from './Hired';
-import CandidateDetails from './CandidateDetails';
-import CandidateListWrapper from './CandidateListWrapper';
+import React from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Shortlisted from "./organisms/ShortListed";
+import Hired from "./organisms/Hired";
+import CandidateDetails from "./organisms/CandidateDetails";
+import CandidateListWrapper from "./CandidateListWrapper";
 
 const RoutesComponent = () => {
   return (

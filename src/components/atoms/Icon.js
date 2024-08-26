@@ -1,4 +1,4 @@
-import { ICONS_MAP } from "../constants/generalConstants";
+import { ICONS_MAP } from "../../constants/generalConstants";
 const Icon = ({ name, className, displayName }) => {
   return (
     <>

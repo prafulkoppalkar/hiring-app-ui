@@ -2,8 +2,8 @@ import React from "react";
 import { RecoilRoot } from "recoil";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-import Header from './components/Header';
-import SideBar from './components/SideBar'
+import Header from "./components/molecules/Header";
+import SideBar from "./components/molecules/SideBar";
 
 import RoutesComponent from "./components/RoutesComponent";
 

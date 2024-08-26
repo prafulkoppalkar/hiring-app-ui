@@ -13,7 +13,7 @@ import {
   filterCandidatesBySearchText,
   groupCandidatesBySkill,
 } from "../helpers/candidateHelpers";
-import CandidateList from "./CandidateList"; // Import the rendering component
+import CandidateList from "./organisms/CandidateList"; // Import the rendering component
 
 const CandidateListWrapper = () => {
   const [candidates, setCandidates] = useRecoilState(candidateListState);

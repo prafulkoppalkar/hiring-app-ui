@@ -1,8 +1,8 @@
 // Education.jsx
 import React from "react";
-import "../styles/components.css";
-import PickerItem from "./PickerItem";
-import logo from "../assets/books_iconnew.png";
+import "../../styles/components.css";
+import PickerItem from "../atoms/PickerItem";
+import logo from "../../assets/books_iconnew.png";
 
 const Education = ({ education }) => {
   return (

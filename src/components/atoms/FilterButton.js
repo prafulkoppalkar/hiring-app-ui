@@ -5,11 +5,11 @@ import {
   skillsState,
   selectedSkillState,
   candidateOffsetState,
-} from "../recoil/atoms"; // Adjust import path
-import { fetchSkills } from "../api/candidateApi"; // Adjust import path
-import "../styles/components.css"; // Ensure styles are consistent
+} from "../../recoil/atoms";
+import { fetchSkills } from "../../api/candidateApi";
+import "../../styles/components.css";
 import Icon from "./Icon";
-import { SLIDER } from "../constants/generalConstants";
+import { SLIDER } from "../../constants/generalConstants";
 
 const FilterButton = () => {
   const [skills, setSkills] = useRecoilState(skillsState);
@@ -80,10 +80,15 @@ const FilterButton = () => {
     <div className={`filter-button`}>
       {selectedSkill && <div class="blue-dot"></div>}
       <div onClick={handleToggleDropdown} className="filter-button__btn">
-        {selectedSkill && <span onClick={handleClearSelection} className="filter-button__item__clear-selection">
-          {selectedSkill?.skillName} &#10005;
-        </span>}
-        <Icon name={SLIDER} className="filter-button__icon"/>
+        {selectedSkill && (
+          <span
+            onClick={handleClearSelection}
+            className="filter-button__item__clear-selection"
+          >
+            {selectedSkill?.skillName} &#10005;
+          </span>
+        )}
+        <Icon name={SLIDER} className="filter-button__icon" />
       </div>
       {isDropdownOpen && (
         <div ref={dropdownRef} className="filter-button__dropdown-container">

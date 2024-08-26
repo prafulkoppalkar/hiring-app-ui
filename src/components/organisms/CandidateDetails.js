@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { fetchCandidateDetails } from "../api/candidateApi";
-import { getCandidateById } from "../recoil/selectors";
+import { fetchCandidateDetails } from "../../api/candidateApi";
+import { getCandidateById } from "../../recoil/selectors";
 import { useRecoilValue } from "recoil";
-import "../styles/components.css";
-import CandidateCard from "./CandidateCard";
-import Spinner from "./Spinner";
-import AvailabilityCards from "./AvailabilityCards";
-import Tabs from "./Tabs";
+import "../../styles/components.css";
+import CandidateCard from "../molecules/CandidateCard";
+import Spinner from "../atoms/Spinner";
+import AvailabilityCards from "../molecules/AvailabilityCards";
+import Tabs from "../molecules/Tabs";
 
 const CandidateDetails = () => {
   const { id } = useParams();

@@ -1,5 +1,5 @@
-import { TIC_MARK } from "../constants/generalConstants";
-import Icon from "./Icon";
+import { TIC_MARK } from "../../constants/generalConstants";
+import Icon from "../atoms/Icon";
 
 const CheckerCard = ({ title, description, footerText }) => {
   return (
