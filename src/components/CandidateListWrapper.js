@@ -74,7 +74,6 @@ const CandidateListWrapper = () => {
       // Use functional update to ensure the offset is updated correctly
       setOffset((prev) => {
         const newOffset = prev + LIMIT;
-        console.log("Updating offset to:", newOffset); // Log updated offset
         return newOffset;
       });
     } catch (error) {
@@ -111,6 +110,7 @@ const CandidateListWrapper = () => {
 
   useEffect(() => {
     const candidatesToRender =
+      // set candidateToRender render based on filters
       selectedSkill && searchText
         ? filterCandidatesBySearchText(
             groupedCandidates.get(selectedSkill?.skillName),
