@@ -204,7 +204,7 @@
   height: 50px;
   top: 0;
   display: flex;
-  justify-content: center; /* Center the filter container */
+  justify-content: center; 
   align-items: center;
   padding: 10px 20px;
   background-color: #fff;
@@ -274,11 +274,11 @@
 }
 
 .search-bar:focus-within {
-  border-color: #6255fc; /* Change this to your desired color */
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Optional: adds a focus ring */
+  border-color: #6255fc;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); 
 }
 
-/* src/styles/FilterButton.css */
+/* FilterButton css */
 .filter-button {
   position: relative;
   display: inline-block;
@@ -299,8 +299,8 @@
 }
 
 .filter-button:focus-within {
-  border-color: #6255fc; /* Change this to your desired color */
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Optional: adds a focus ring */
+  border-color: #6255fc; 
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); 
 }
 
 .filter-button__btn {
@@ -402,7 +402,7 @@
   transition: width 0.3s;
   background: #6255fc;
   color: #fff;
-  z-index: 1000; /* Make sure it's on top of the content */
+  z-index: 1000; 
   overflow-x: hidden;
 }
 
@@ -479,7 +479,7 @@
 
 /* Main content styles */
 .main-content {
-  margin-left: 50px; /* Adjust margin to match the sidebar width */
+  margin-left: 50px; 
   transition: margin-left 0.3s;
 }
 
@@ -708,11 +708,11 @@
 }
 
 .personal-details-item:first-child:before {
-  top: 30px; /* Start the line below the first icon */
+  top: 30px; 
 }
 
 .personal-details-item:last-child:before {
-  bottom: 30px; /* Extend the line a bit for the last item */
+  bottom: 30px; 
 }
 
 @media (max-width: 900px) {
