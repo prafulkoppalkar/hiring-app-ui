@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/components.css"; // Make sure to include the correct path to your CSS file
+import "../../styles/components.css";
 
 const Spinner = () => {
   return <div className="spinner"></div>;
