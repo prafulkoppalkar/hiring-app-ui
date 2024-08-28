@@ -15,25 +15,24 @@
   color: white;
 }
 
-/* global.css or index.css or App.css */
 button {
-  background-color: #6255fc; /* Blue background */
-  color: white; /* White text */
+  background-color: #6255fc; 
+  color: white; 
   height: 30px;
   width: max-content;
   font-weight: 600;
-  border: none; /* Remove default border */
-  border-radius: 10px; /* Slightly rounded corners */
-  font-size: small; /* Font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  border: none; 
+  border-radius: 10px;
+  font-size: small; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #4e41e5e3; /* Darker blue on hover */
+  background-color: #4e41e5e3; 
 }
 
 button:disabled {
-  background-color: #cccccc; /* Gray background when disabled */
-  cursor: not-allowed; /* Not allowed cursor when disabled */
+  background-color: #cccccc; 
+  cursor: not-allowed; 
 }
