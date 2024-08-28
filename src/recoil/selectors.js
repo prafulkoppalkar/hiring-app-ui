@@ -1,6 +1,5 @@
-// src/recoil/selectors.js
 import { selectorFamily } from 'recoil';
-import { candidateListState } from './atoms'; // Adjust the import based on your file structure
+import { candidateListState } from './atoms';
 
 export const getCandidateById = selectorFamily({
   key: 'getCandidateById',
