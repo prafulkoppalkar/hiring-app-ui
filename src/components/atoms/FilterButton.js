@@ -98,16 +98,6 @@ const FilterButton = () => {
             <p className="filter-button__no-skills">No skills available</p>
           )}
           <ul className="filter-button__dropdown">
-            {/* {selectedSkill && (
-              <li
-                onClick={handleClearSelection}
-                className="filter-button__item__selected"
-              >
-                <span className="filter-button__item__clear-selection">
-                  {selectedSkill?.skillName} &#10005;
-                </span>
-              </li>
-            )} */}
             {sortedSkills &&
               sortedSkills.map((skill) => (
                 <li
